@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>Our Team Members</h1>
+        
+        <ol style="list-style-type: disc;">
+            <li>Ritobrata Bose</li>
+            <li>Rupam Das</li>
+            <li>Pranay Bhowmik</li>
+            <li>Koustav Das</li>
+            <li>Pritam Nandi</li>
+           </ol>
+        <script>
+            var array = [];
+            var friendList = document.querySelectorAll("li");
+            for(let li of friendList)
+            {
+                array.push(li.innerHTML);
+            }
+            console.log(array);
+            localStorage.setItem("array",array);
+        </script>
+    </body>
+</html>
